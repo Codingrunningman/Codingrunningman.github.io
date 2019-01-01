@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 内容与形式
+title: 随便想想 - 学习
 date:  2018-12-26 19:00:00
 ---
 
