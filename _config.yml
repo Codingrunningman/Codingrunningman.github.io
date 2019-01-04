@@ -16,9 +16,8 @@
 title: Lidongsheng's Blog
 email: 2567501064@QQ.com
 description: >- # this means to ignore newlines until "baseurl:"
-  It is a basic theme and I do not want to create another template to replace it .
-  I love this concise theme and it makes the article more particular .
-baseurl: "/mblog/" # the subpath of your site, e.g. /blog
+  要么孤独   要么庸俗  
+baseurl: "" # the subpath of your site, e.g. 
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: coding
 github_username:  coding
