@@ -18,7 +18,8 @@ layout: default
   <div class="post-content e-content" itemprop="articleBody">
     {{ content }}
   </div>
-<div id="gitmentContainer"></div>
+{% if site.comment_gitment_repo %}
+<div id="page.title"></div>
 <link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
 <script src="https://www.wenjunjiang.win/js/gitment.js "></script>
 <script>
@@ -32,6 +33,6 @@ var gitment = new Gitment({
 });
 gitment.render('gitmentContainer');
 </script>
-
+{% endif %}
   <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>
 </article>
