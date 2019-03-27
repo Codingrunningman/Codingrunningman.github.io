@@ -18,10 +18,20 @@ layout: default
   <div class="post-content e-content" itemprop="articleBody">
     {{ content }}
   </div>
-
-  {%- if site.disqus.shortname -%}
-    {%- include disqus_comments.html -%}
-  {%- endif -%}
+<div id="gitmentContainer"></div>
+<link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
+<script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
+<script>
+var gitment = new Gitment({
+    owner: 'codingrunningman',
+    repo: 'codingrunningman.github.io',
+    oauth: {
+        client_id: '7418fde35d3406c69719',
+        client_secret: 'e9df8da79d5997728eab805f58ae111ed8a9c0eb',
+    },
+});
+gitment.render('gitmentContainer');
+</script>
 
   <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>
 </article>
